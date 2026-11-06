@@ -1,0 +1,16 @@
+$ python src/train.py sample/emails.csv --model outputs/model.joblib
+precision    recall  f1-score   support
+
+           0      1.000     0.500     0.667         2
+           1      0.500     1.000     0.667         1
+
+    accuracy                          0.667         3
+   macro avg      0.750     0.750     0.667         3
+weighted avg      0.833     0.667     0.667         3
+
+saved outputs/model.joblib
+
+
+$ python src/predict.py outputs/model.joblib "Urgent: verify your account immediately"
+{'phishing_probability': 0.5776, 'predicted_label': 1, 'top_phishing_terms': [{'term': 'verify', 'contribution': 0.052}, {'term': 'urgent', 'contribution': 0.0353}, {'term': 'verify your', 'contribution': 0.0353}, {'term': 'urgent verify', 'contribution': 0.0353}, {'term': 'immediately', 'contribution': 0.0353}]}
+

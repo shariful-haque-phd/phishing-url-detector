@@ -1,0 +1,33 @@
+{
+  "project_id": 16,
+  "repo_name": "016-email-phishing-classifier",
+  "title": "Email Phishing Classifier",
+  "theme": "Cybersecurity, Privacy & Abuse Defense",
+  "theme_id": "T02",
+  "level": 1,
+  "level_label": "Foundations",
+  "prototype_status": "research prototype",
+  "primary_description": "Defensive email NLP classifier",
+  "research_question_proposed": "What is the performance of simple text classifiers on clearly labeled phishing email samples?",
+  "sample_files": [
+    "sample/emails.csv"
+  ],
+  "source_modules": [
+    "src/predict.py",
+    "src/train.py"
+  ],
+  "commands_from_original_readme": [
+    "python src/train.py sample/emails.csv --model outputs/model.joblib",
+    "python src/predict.py outputs/model.joblib \"Urgent: verify your account immediately\""
+  ],
+  "docs": [
+    "README.md",
+    "docs/RESEARCH.md",
+    "docs/ARCHITECTURE.md",
+    "docs/DEMO.md",
+    "docs/RESULTS.md"
+  ],
+  "source_origin": "github-level1-20-projects(1).zip",
+  "execution_status": "verified_local_execution",
+  "evidence": "results/execution.json"
+}

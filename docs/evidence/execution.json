@@ -1,0 +1,24 @@
+{
+  "id": "016",
+  "status": "executed",
+  "commands": [
+    "python src/train.py sample/emails.csv --model outputs/model.joblib",
+    "python src/predict.py outputs/model.joblib \"Urgent: verify your account immediately\""
+  ],
+  "elapsed_seconds": 7.53,
+  "python": "3.13.5",
+  "inputs": [
+    {
+      "file": "sample/emails.csv",
+      "sha256": "8fe3f5d66194166dbfef76175e2b85ed7e790bd701259245e983f90a781d9b89"
+    }
+  ],
+  "output_artifacts": [
+    {
+      "file": "results/execution.txt",
+      "sha256": "08177353d7f92488478250f97484679b456a930e7dd0d92bd4282b9467a1f0b4",
+      "bytes": 814
+    }
+  ],
+  "observations": "Local execution using bundled fixtures; not an external performance evaluation."
+}
