@@ -1,0 +1,11 @@
+url,label
+https://www.wikipedia.org,0
+https://www.python.org/downloads/,0
+https://github.com/login,0
+https://docs.python.org/3/,0
+https://www.openstreetmap.org,0
+http://verify-account-example.invalid/login,1
+http://192.0.2.10/secure-login,1
+http://account-update-example.invalid/confirm,1
+http://bank-login-example.invalid/verify?user=2,1
+http://secure-wallet-example.invalid/password,1

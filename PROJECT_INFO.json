@@ -1,0 +1,34 @@
+{
+  "project_id": 15,
+  "repo_name": "015-phishing-url-detector",
+  "title": "Phishing Url Detector",
+  "theme": "Cybersecurity, Privacy & Abuse Defense",
+  "theme_id": "T02",
+  "level": 1,
+  "level_label": "Foundations",
+  "prototype_status": "research prototype",
+  "primary_description": "Defensive URL classification",
+  "research_question_proposed": "Can URL-derived features distinguish suspicious links from benign examples in a controlled dataset?",
+  "sample_files": [
+    "sample/urls.csv"
+  ],
+  "source_modules": [
+    "src/features.py",
+    "src/predict.py",
+    "src/train.py"
+  ],
+  "commands_from_original_readme": [
+    "python src/train.py sample/urls.csv --model outputs/model.joblib",
+    "python src/predict.py outputs/model.joblib \"https://example.com/login\""
+  ],
+  "docs": [
+    "README.md",
+    "docs/RESEARCH.md",
+    "docs/ARCHITECTURE.md",
+    "docs/DEMO.md",
+    "docs/RESULTS.md"
+  ],
+  "source_origin": "github-level1-20-projects(1).zip",
+  "execution_status": "verified_local_execution",
+  "evidence": "results/execution.json"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "015",
+  "status": "executed",
+  "commands": [
+    "python src/train.py sample/urls.csv --model outputs/model.joblib",
+    "python src/predict.py outputs/model.joblib \"https://example.com/login\""
+  ],
+  "elapsed_seconds": 8.2,
+  "python": "3.13.5",
+  "inputs": [
+    {
+      "file": "sample/urls.csv",
+      "sha256": "346f958e936b6f275fba0814c6b545da9ba9533c353e5d92c8057fdf46e5411e"
+    }
+  ],
+  "output_artifacts": [
+    {
+      "file": "results/execution.txt",
+      "sha256": "1f2fe341b257b2018825fdff9e1c2d03464fb9975d37b06f35ad890fc25ca063",
+      "bytes": 573
+    }
+  ],
+  "observations": "Local execution using bundled fixtures; not an external performance evaluation."
+}

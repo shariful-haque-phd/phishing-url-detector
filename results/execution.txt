@@ -1,0 +1,16 @@
+$ python src/train.py sample/urls.csv --model outputs/model.joblib
+precision    recall  f1-score   support
+
+           0      1.000     1.000     1.000         2
+           1      1.000     1.000     1.000         1
+
+    accuracy                          1.000         3
+   macro avg      1.000     1.000     1.000         3
+weighted avg      1.000     1.000     1.000         3
+
+saved outputs/model.joblib
+
+
+$ python src/predict.py outputs/model.joblib "https://example.com/login"
+{'url': 'https://example.com/login', 'phishing_probability': 0.116, 'predicted_label': 0}
+
